@@ -12,10 +12,38 @@ function Tamogotchi(tamoName) {
             -mood percentage
             -saying(a saying relating the the mood)
     */
+    
+    let moods = [
+        {mood:"angry", moodpercentage:10, saying:"I am angry!"},
+        {mood:"bored", moodpercentage: 20, saying:"I am bored!"},
+        {mood:"hungry", moodpercentage: 30, saying:"I am hungry!"},
+        {mood:"tursty", moodpercentage: 40, saying:"I am tursty!"},
+        {mood:"playful", moodpercentage: 50, saying:"I want to play!"},
+        {mood:"happy", moodpercentage: 60, saying:"I am happy!"},
+        {mood:"fun", moodpercentage: 70, saying:"I am having fun!"},
+        {mood:"ecstatic", moodpercentage: 80, saying:"I feel ecstatic!"},
+        {mood:"sleep", moodpercentage: 90, saying:"I am sleepy!"},
+        {mood:"relax", moodpercentage: 100, saying:"I feel great!"}
+        ]
+        
     /*
         an array of compliments
         -10 items
     */
+        let compliments = [
+            "Thank you for that!",
+             "You are my best friend!", 
+             "This was yummy!",
+             "I loved the drink!",
+             "I love to play with you!",
+             "You make me smile!",
+             "This is so much fun!",
+             "I am on top of the world!",
+             "I like my pillow!",
+             "This is the best day ever!"
+            ]
+             
+        
 
     /*
         add an array of favourite foods(at least 10)
@@ -24,6 +52,20 @@ function Tamogotchi(tamoName) {
         -food value
         -chance of food poisoning
     */
+        
+        let foods = [
+            {food:"cracker", value:10, poison:0},
+            {food:"fish", value:120, poison:0},
+            {food:"mushroom", value:113, poison:10},
+            {food:"cucumber", value:15, poison:3},
+            {food:"chips", value:125, poison:5},
+            {food:"coffee", value:110, poison:2},
+            {food:"grass", value:17, poison:7},
+            {food:"wax", value:65, poison:12},
+            {food:"gas", value:56, poison:17},
+            {food:"beer", value:2, poison:3}
+            ]
+            
 
     this.init = () => {
         this.petName = tamoName;
@@ -62,6 +104,7 @@ Tamogotchi.prototype.eatLasagna = function() {
 //to add
 
 //a drink coffee command that speeds up the metabolism of your pet
+
 
 //a drink beer command that slows down the metabolism of your pet
 
